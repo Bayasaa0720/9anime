@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9anime.test</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="anime-genre-list.css">
+  <link rel="stylesheet" href="header-dropdown.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+   <div class="login-blur">
+
+      <!--HEADER-->
+
+      <header class="main-header">
+
+        <div style="display: flex;">
+          <div class="header-logo">
+            <div class="burger-menu-btn">
+              <img src="../9anime/img/burger-menu.png" alt="burger menu" class="burger-menu">
+            <ul style="margin-top: 20px;" class="pls">
+              <li style="padding-top: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;"><a href="#">HOME</a></li>
+              <li class="genres"><a href="#">GENRES</a>
+                <ul>
+                  <li style="margin-top: 10px;"><a href="#">Action</a></li>
+                  <li style="margin-top: 10px;"><a href="#">Adveture</a></li>
+                  <li style="margin-top: 10px;"><a href="#">Cars</a></li>
+                  <li style="margin-top: 10px;"><a href="#">Comedy</a></li>
+                  <li><a href="#">Dementia</a></li>
+                  <li><a href="#">Demons</a></li>
+                  <li><a href="#">Drama</a></li>
+                  <li><a href="#">Ecchi</a></li>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Game</a></li>
+                  <li><a href="#">Harem</a></li>
+                  <li><a href="#">Historical</a></li>
+                  <li><a href="#">Horror</a></li>
+                  <li><a href="#">Isakai</a></li>
+                  <li><a href="#">Josei</a></li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Magic</a></li>
+                  <li><a href="#">Martial arts</a></li>
+                  <li><a href="#">Mecha</a></li>
+                  <li><a href="#">Military</a></li>
+                  <li><a href="#">Music</a></li>
+                  <li><a href="#">Mystery</a></li>
+                  <li><a href="#">Parody</a></li>
+                  <li><a href="#">Police</a></li>
+                  <li><a href="#">Psychological</a></li>
+                  <li><a href="#">Romance</a></li>
+                  <li><a href="#">Samurai</a></li>
+                  <li><a href="#">School</a></li>
+                  <li><a href="#">Sci-Fi</a></li>
+                  <li><a href="#">Seinen</a></li>
+                  <li><a href="#">Shoujo</a></li>
+                  <li><a href="#">Shoujo Ai</a></li>
+                  <li><a href="#">Shounen</a></li>
+                  <li><a href="#">Shounen Ai</a></li>
+                  <li><a href="#">Slice of Life</a></li>
+                  <li><a href="#">Space</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Super Power</a></li>
+                  <li><a href="#">Supernatural</a></li>
+                  <li><a href="#">Thriller</a></li>
+                  <li><a href="#">Vampire</a></li>
+                </ul>
+              </li>
+              <li class="types"><a href="#">TYPES</a>
+                <ul>
+                  <li><a href="#" style="margin-top: 10px;">Movies</a></li>
+                  <li><a href="">TV Series</a></li>
+                  <li><a href="">OVAs</a></li>
+                  <li><a href="">ONAs</a></li>
+                  <li><a href="">Specials</a></li>
+                </ul>
+              </li>
+              <li><a href="#">UPDATED</a></li>
+              <li><a href="#">ADDED</a></li>
+              <li><a href="#">ONGOING</a></li>
+              <li><a href="#">UPCOMING</a></li>
+              <li><a href="#">RANDOM</a></li>
+              <li><a href="#">9ANIME</a></li>
+              <li style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"><a href="#" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; padding-bottom: 13px;">APP</a></li>
+            </ul>
+            </div>
+            <a href="main.html"><img src="../9anime/img/logo.png" alt="Logo"></a>
+          </div>
+
+          <div class="anime-list-header-container">
+            <div class="anime-list-header-search">
+              <form action="GET">
+                <input type="text" placeholder="Enter anime name">
+                <img src="../9anime/img/search.png" alt="search">
+              </form>
+            </div>
+  
+            <div class="anime-list-header-sm">
+              <img src="../9anime/img/twitter.png" alt="twitter">
+              <img src="../9anime/img/youtube.png" alt="youtube">
+              <img src="../9anime/img/reddit.png" alt="reddit">
+            </div>
+          </div>
+        </div>
+
+        <div class="sign-in" onclick="login()">
+          <p>Sign in</p>
+        </div>
+      </header>
+
+      <div class="headling list-wrapper">
+        <a href="main.html">Home</a>
+        <pre>  >  </pre>
+        <p>Action Anime</p>
+      </div>
+
+      <!--MAIN-->
+
+      <div class="main-list-container list-wrapper">
+        <div class="search-list">
+          <div class="search-filter">
+            <div class="list-filter" onclick="ExtendFilterGenre()">
+              <pre>Genre </pre>
+              <p class="genre-filter-name">All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter" onclick="ExtendFilterType()">
+              <pre>Type </pre>
+              <p class="type-filter-name">All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter">
+              <pre>Country </pre>
+              <p>All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter" onclick="ExtendFilterStatus()">
+              <pre>Status </pre>
+              <p class="status-filter-name">All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter" onclick="ExtendFilterSeason()">
+              <pre>Season </pre>
+              <p class="season-filter-name">All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter" onclick="ExtendFilterLanguage()">
+              <pre>Language </pre>
+              <p class="language-filter-name">All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter" onclick="ExtendFilterYear()">
+              <pre>Year </pre>
+              <p class="year-filter-name">All</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <div class="list-filter" onclick="ExtendFilterSort()">
+              <pre>Sort </pre>
+              <p class="sort-filter-name">Default</p>
+              <img src="../9anime/img/arrow.png" alt="dropdown-arrow">
+            </div>
+
+            <form action="GET">
+              <input type="text" name="filter" placeholder="Search...">
+              <div class="filter-btn">
+                <button>Filter</button>
+                <img src="../9anime/img/filter.png" alt="filter">
+              </div>
+            </form>
+          </div>
+  
+          <div class="anime-list-container">
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/JungleNoOujoTaaChan.jpg" alt="anime">
+                <p class="hd">N/A</p>
+                <p class="episode">Ep 1/50</p>
+              </div>
+              <p class="anime-small-poster-name">Jungle no Ouja Taa-chan</p>
+
+              <div class="anime-small-popup">
+                <div class="anime-small-popup-title">
+                  <h3>Jungle no Ouja Taa-chan</h3>
+                  <h4>+</h4>
+                </div>
+
+                <div class="anime-small-popup-episode">
+                  <p>Episode 1/50</p>
+                  <h4>TV Series</h4>
+                </div>
+
+                <p class="anime-small-popup-desc">
+                  Ta-chan is the king of jungle. He was abandoned in savanna, and has been raised by 
+                  a chimpanzee, Etekichi. He has a dearest wife, Jane...
+                </p>
+
+                <div class="anime-small-popup-inf">
+                  <div class="popup-inf-line">
+                    <pre>Other names: </pre>
+                    <p>Edends Zero</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Scores: </pre>
+                    <p>7.02</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Date aired: </pre>
+                    <p>Oct 14, 1993 to Sep 29, 1994</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Status: </pre>
+                    <p>Finished Airing</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Genre: </pre>
+                    <a href="#">Action</a><pre>, </pre>
+                    <a href="#">Comedy</a><pre>, </pre>
+                    <a href="#">Parody</a>
+                  </div>
+                </div>
+
+                <div class="anime-small-popup-watch">
+                  <img src="../9anime/img/play-button.png" alt="play">
+                  <h3>WATCH NOW!</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MajesticPrinceEpisode25-WingsToTheFuture.jpg" alt="anime">
+                <p class="hd">N/A</p>
+                <p class="episode">Ep 1/1</p>
+              </div>
+              <p class="anime-small-poster-name">Majestic Prince Episode 25 - Wings to the Future</p>
+
+              <div class="anime-small-popup">
+                <div class="anime-small-popup-title">
+                  <h3>Jungle no Ouja Taa-chan</h3>
+                  <h4>+</h4>
+                </div>
+
+                <div class="anime-small-popup-episode">
+                  <p>Episode 1/50</p>
+                  <h4>TV Series</h4>
+                </div>
+
+                <p class="anime-small-popup-desc">
+                  Ta-chan is the king of jungle. He was abandoned in savanna, and has been raised by 
+                  a chimpanzee, Etekichi. He has a dearest wife, Jane...
+                </p>
+
+                <div class="anime-small-popup-inf">
+                  <div class="popup-inf-line">
+                    <pre>Other names: </pre>
+                    <p>Edends Zero</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Scores: </pre>
+                    <p>7.02</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Date aired: </pre>
+                    <p>Oct 14, 1993 to Sep 29, 1994</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Status: </pre>
+                    <p>Finished Airing</p>
+                  </div>
+
+                  <div class="popup-inf-line">
+                    <pre>Genre: </pre>
+                    <a href="#">Action</a><pre>, </pre>
+                    <a href="#">Comedy</a><pre>, </pre>
+                    <a href="#">Parody</a>
+                  </div>
+                </div>
+
+                <div class="anime-small-popup-watch">
+                  <img src="../9anime/img/play-button.png" alt="play">
+                  <h3>WATCH NOW!</h3>
+                </div>
+              </div>s
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MyHeroAcademiaSeason2HeroNotebook.jpg" alt="anime">
+                <p class="hd">N/A</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">My Hero Academia Season 2: Hero Notebook</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/GhostInTheShellStandAloneComplex2ndGIGIndividualEleven.jpg" alt="anime">
+                <p class="hd">N/A</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Ghost in the Shell: Stand Alone Complex 2nd GIG -..</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/GhostInTheShellStandAloneComplexTheLaughingMna.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Ghost in the Shell: Stand Alone Complex - The..</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/KohakuKidoutaiAriseAnotherMission.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Kohaku Kidoutai Arise: Another Mission</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MobPsycho100DaiIkkaiReiTokaSoudanshoIanRyokouKokoroMitasuIyashiNoTabi.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mob Psycho 100: Dai Ikkai Rei toka Soudansho Ian...</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MobPsycho100ReigenShirarezaruKisekiNoReinouryokusha.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mob Psycho 100: Reigen - Shirarezaru Kiseki no..</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/HighSchoolDXDBornYomigaeranaiFushichou.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">High School DxD BorN: Yomigaeranai Fushichou</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/HighSchoolDxDHeroTaiikukanUraNoHoly.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">High School DxD Hero: Taiikukan-ura no Holy</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/FullMetalPanicInvisibleVictoryIntermission.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 2/2</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Full Metal Panic! Invisible Victory Intermission</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/GundamBuildDiversPrologue.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Gundam Build Divers Prologue</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/KyousouGiga.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Kyousou Giga</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/NanbakaIdiotsWithStudentNumbers.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Nanbaka: Idiots with Student Numbers!</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MiraiNikkiOVA.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mirai Nikki OVA</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/TheFutureDiaryRedial.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">The Future Diary: Redial</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/FateGrandOrderFirstOrder.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Fate/Grand Order -First Order-</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/FateGrandOrderMoonlightLostroom.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Fate/Grand Order: Moonlight/Lostroom</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/FistOfTheNorthStarTheLegendOfToki.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Fist of the North Star: The Legend of Toki</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/HokutoNoKenYuriaDen.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Hokuto no Ken: Yuria-den</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/NewFistOfTheNorthStar.jpg" alt="anime">
+                <p class="hd">SD</p>
+                <p class="episode">Ep 3/3</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">New Fist of the North Star</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/HokutoNoKenRaohGaidenGekitouHen.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep Full</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Hokuto no Ken: Raoh Gaiden Gekitou-hen</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/FistOfTheNorthStarRaohSideStoryJunaiArc.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep Full</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Fist of the North Star:Raoh Side Story Junai Arc</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/GaroCrimsonMoonTheButterflyOfTime.jpg" alt="anime">
+                <p class="hd">N/A</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Garo: Crimson Moon-The Butterfly of Time</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MokeiSenshiGunplaBuildersBeginningG.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 1/3</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mokei Senshi Gunpla Builders Beginning G</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MobileSuitGundamAGEMemoryOfEden.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 2/2</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mobile Suit Gundam AGE: Memory of Eden</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MobileSuitGundamWingOperationMeteor.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 4/4</p>
+                <pre>SUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mobile Suit Gundam Wing: Operation Meteor</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/ChouDeneibanSDGundamSangokudenBraveBattleWarriors.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep Full</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Chou Deneiban SD Gundam Sangokuden..</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MobileSuitGundamSEEDSpecialEdition.jpg" alt="anime">
+                <p class="hd">SD</p>
+                <p class="episode">Ep 3/3</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mobile Suit Gundam SEED Special Edition</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/MobileSuitGundamSEEDDestinySpecialEdition.jpg" alt="anime">
+                <p class="hd">SD</p>
+                <p class="episode">Ep 4/4</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Mobile Suit Gundam SEED Destiny Special Edition</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/Appleseed.jpg" alt="anime">
+                <p class="hd">SD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Appleseed</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/IzettaTheLastWitch.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 12/12</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Izetta: The Last Witch</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/LaughingUnderTheClouds.jpg" alt="anime">
+                <p class="hd">HD</p>
+                <p class="episode">Ep 12/12</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Laughing Under the Clouds</p>
+            </div>
+
+            <div class="anime-small">
+              <div class="anime-small-poster">
+                <img src="../9anime/img/action-anime/BoboboBoBoBoboRecap.jpg" alt="anime">
+                <p class="hd">SD</p>
+                <p class="episode">Ep 1/1</p>
+                <pre>SUB   DUB</pre>
+              </div>
+              <p class="anime-small-poster-name">Bobobo-bo Bo-bobo Recap</p>
+            </div>
+          </div>
+
+          <div class="search-list-footer">
+            <div class="previous">
+              <img src="../9anime/img/back-arrow.png" alt="previous">
+              <a href="#">Previous</a>
+              <div class="previous-hide"></div>
+            </div>
+            <p>page</p>
+            <form action="get">
+              <input type="text" placeholder="1">
+            </form>
+            <a href="#" class="go">go</a>
+            <p>of 82</p>
+            <div class="next">
+              <a href="#">  Next</a>
+              <img src="../9anime/img/right-arrow.png" alt="next">
+            </div>
+          </div>
+          
+        </div>
+
+        <!--SIDE MENU-->
+
+        <div class="side-list">
+          <div class="top-list">
+            <div class="timelapse">
+              <h2>Top Anime</h2>
+              <a href="#">Today</a>
+              <a href="#">Week</a>
+              <a href="#">Month</a>
+            </div>
+
+            <div class="top1">
+              <h2>1</h2>
+              <div>
+                <p class="top1-name">One Piece</p>
+                <div class="viewcount">
+                  <img src="../9anime/img/photo-top1.png" alt="views">
+                  <p>35,542</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-anime-list">
+            <div class="top10">
+              <h2>2</h2>
+              <img src="../9anime/img/Top-anime/DemonSlayerKimetsuNoYaibaHashiraTrainingArc.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">Demon Slayer: Kimetsu no Yaiba Hashira Training Arc</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>25,207</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>3</h2>
+              <img src="../9anime/img/Top-anime/KonosubaGodsBlessingOnThisWonderfulWorld3.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">KonoSuba: God's Blessing<br> on This Wonderful World! 3</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>17,867</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>4</h2>
+              <img src="../9anime/img/Top-anime/KaijuNo8.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">Kaiju No. 8</p>
+                <div class="top10-anime-view" style="margin-top: 25px;">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>16,754</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>5</h2>
+              <img src="../9anime/img/Top-anime/IWasReincarnatedAsThe7thPrinceSoICanTakeMyTimePerfectingMyMagicalAbility.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">I Was Reincarnated as the<br> 7th Prince so I Can Take...</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>13,294</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>6</h2>
+              <img src="../9anime/img/Top-anime/WindBreaker.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">Wind Breaker</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>9,417</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>7</h2>
+              <img src="../9anime/img/Top-anime/DeliciousInDungeon.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">Delicious in Dungeon</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>7,705</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>8</h2>
+              <img src="../9anime/img/Top-anime/JujutsuKaisen2ndSeason.png" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">Jujutsu Kaisen 2nd Season</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>4,970</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>9</h2>
+              <img src="../9anime/img/Top-anime/ChillinInAnotherWorldWithLevel2SuperCheatPowers.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">Chillin' in Another World with Level 2 Super Cheat Powers</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>4,951</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="top10">
+              <h2>10</h2>
+              <img src="../9anime/img/Top-anime/MyHeroAcademiaSeason7.jpg" alt="top10">
+              <div class="top10-anime-container">
+                <p class="top10-anime-name">My Hero Academia Season 7</p>
+                <div class="top10-anime-view">
+                  <img src="../9anime/img/photo.png" alt="views">
+                  <p>4,929</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+
+            <!--LOGIN-->
+
+            <div class="locker" onclick="esc()"></div>
+
+            <div class="login-container">
+              <div class="blur">
+                <img src="../9anime/img/kurumi-login.png" alt="kurumi login" class="login-kurumi">
+          
+                <div class="login-form">
+                  <img src="../9anime/img/close.png" alt="close icon" class="close-icon" onclick="login()">
+                  <form action="GET">
+                   <h2>Member Login</h2>
+                   <p>9anime - a better place to watch anime online<br>for free!</p>
+                   <div class="login-field">
+                      <input type="text" placeholder="Your Email">
+                      <img src="../9anime/img/contact.png" alt="email">
+                    </div>
+                    <div class="login-field">
+                      <input type="password" placeholder="Password">
+                      <img src="../9anime/img/lock.png" alt="password">
+                    </div>
+                    <div class="login-remember">
+                      <input type="checkbox" name="remember" id="remember">
+                      <label for="remember">Remember me</label>
+                      <a href="#" onclick="frgtPass()">Forgot password?</a>
+                    </div>
+                    <button class="login-btn">Login</button>
+                    <div class="register">
+                      <label>Don't have an account?</label>
+                      <a href="#" onclick="registerform()">Register</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        
+            <!--FORGOT PASSWORD-->
+        
+            <div class="frgt_password_container">
+              <div class="blur1">
+                <img src="../9anime/img/kurumi_frgt.png" alt="kurumi forgot password" class="frgt_password_kurumi">
+        
+                <div class="frgt_password_form">
+                  <img src="../9anime/img/close.png" alt="close icon" class="close-icon" onclick="esc()">
+                  <form action="GET">
+                    <h2>Reset Password</h2>
+                    <p>We will send an email to your box, just follow<br>that link to set your new password.</p>
+                    <div class="login-field">
+                      <input type="text" placeholder="Your username or email">
+                      <img src="../9anime/img/contact.png" alt="email">
+                    </div>
+                    <button class="reset-btn">Reset</button>
+                    <div class="register">
+                      <a href="#" onclick="BackToLogin()">Back to Sign-in</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        
+            <!--REGISTER-->
+        
+            <div class="register_container">
+              <div class="blur2">
+                <img src="../9anime/img/register_kurumi.png" alt="kurumi" class="register_kurumi">
+        
+                <div class="register_form">
+                  <img src="../9anime/img/close.png" alt="close icon" class="close-icon" onclick="esc()">
+                  <form action="GET">
+                    <h2>Register</h2>
+                    <p>When becoming members of the site, you<br>could use the full range of functions.</p>
+                    <div class="login-field">
+                      <input type="text" placeholder="Your Name">
+                      <img src="../9anime/img/contact.png" alt="name">
+                    </div>
+                    <div class="login-field">
+                      <input type="text" placeholder="Email">
+                      <img src="../9anime/img/email.png" alt="email">
+                    </div>
+                    <div class="login-field">
+                      <input type="text" placeholder="Your Password">
+                      <img src="../9anime/img/lock.png" alt="password">
+                    </div>
+                    <div class="login-field">
+                      <input type="text" placeholder="Repeat your password">
+                      <img src="../9anime/img/lock.png" alt="password">
+                    </div>
+        
+                    <button class="register_btn">Register</button>
+                    <div class="register">
+                      <label>Have an account?</label>
+                      <a href="#" onclick="BackToLogin()">Sign-in</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        
+            </div>
+    
+          <!--EXTENDED GENRE LIST-->
+    
+          <div class="list-locker" onclick="backList()"></div>
+    
+          <div class="Extend-list extend-genre">
+            <div class="extend-genre-list" onclick="SortGenreName(event)"  data-genre="Action">
+              <input type="checkbox" name="Action" id="Action" class="check1">
+              <label for="Action">Action</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Adventure">
+              <input type="checkbox" name="Adventure" id="Adventure" class="check1">
+              <label for="Adventure">Adventure</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Cars">
+              <input type="checkbox" name="Cars" id="Cars" class="check1">
+              <label for="Cars">Cars</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Comedy">
+              <input type="checkbox" name="Comedy" id="Comedy" class="check1">
+              <label for="Comedy">Comedy</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Dementia">
+              <input type="checkbox" name="Dementia" id="Dementia" class="check1">
+              <label for="Dementia">Dementia</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Demons">
+              <input type="checkbox" name="Demons" id="Demons" class="check1">
+              <label for="Demons">Demons</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Drama">
+              <input type="checkbox" name="Drama" id="Drama" class="check1">
+              <label for="Drama">Drama</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Ecchi">
+              <input type="checkbox" name="Ecchi" id="Ecchi" class="check1">
+              <label for="Ecchi">Ecchi</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Fantasy">
+              <input type="checkbox" name="Fantasy" id="Fantasy" class="check1">
+              <label for="Fantasy">Fantasy</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Game">
+              <input type="checkbox" name="Game" id="Game" class="check1">
+              <label for="Game">Game</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Harem">
+              <input type="checkbox" name="Harem" id="Harem" class="check1">
+              <label for="Harem">Harem</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Historical">
+              <input type="checkbox" name="Historical" id="Historical" class="check1">
+              <label for="Historical">Historical</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Horror">
+              <input type="checkbox" name="Horror" id="Horror" class="check1">
+              <label for="Horror">Horror</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Isekai">
+              <input type="checkbox" name="Isekai" id="Isekai" class="check1">
+              <label for="Isekai">Isekai</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Josei">
+              <input type="checkbox" name="Josei" id="Josei" class="check1">
+              <label for="Josei">Josei</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Kids">
+              <input type="checkbox" name="Kids" id="Kids" class="check1">
+              <label for="Kids">Kids</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Magic">
+              <input type="checkbox" name="Magic" id="Magic" class="check1">
+              <label for="Magic">Magic</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Martial-Arts">
+              <input type="checkbox" name="Martial Arts" id="Martial-Arts" class="check1">
+              <label for="Martial Arts">Martial Arts</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Mecha">
+              <input type="checkbox" name="Mecha" id="Mecha" class="check1">
+              <label for="Mecha">Mecha</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Military">
+              <input type="checkbox" name="Military" id="Military" class="check1">
+              <label for="Military">Military</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Music">
+              <input type="checkbox" name="Music" id="Music" class="check1">
+              <label for="Music">Music</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Mystery">
+              <input type="checkbox" name="Mystery" id="Mystery" class="check1">
+              <label for="Mystery">Mystery</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Parody">
+              <input type="checkbox" name="Parody" id="Parody" class="check1">
+              <label for="Parody">Parody</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Police">
+              <input type="checkbox" name="Police" id="Police" class="check1">
+              <label for="Police">Police</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Psychological">
+              <input type="checkbox" name="Psychological" id="Psychological" class="check1">
+              <label for="Psychological">Psychological</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Romance">
+              <input type="checkbox" name="Romance" id="Romance" class="check1">
+              <label for="Romance">Romance</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Samurai">
+              <input type="checkbox" name="Samurai" id="Samurai" class="check1">
+              <label for="Samurai">Samurai</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="School">
+              <input type="checkbox" name="School" id="School" class="check1">
+              <label for="School">School</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Sci-Fi">
+              <input type="checkbox" name="Sci-Fi" id="Sci-Fi" class="check1">
+              <label for="Sci-Fi">Sci-Fi</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Seinen">
+              <input type="checkbox" name="Seinen" id="Seinen" class="check1">
+              <label for="Seinen">Seinen</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Shoujo">
+              <input type="checkbox" name="Shoujo" id="Shoujo" class="check1">
+              <label for="Shoujo">Shoujo</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Shoujo-Ai">
+              <input type="checkbox" name="Shoujo-Ai" id="Shoujo-Ai" class="check1">
+              <label for="Shoujo-Ai">Shoujo Ai</label>
+            </div>
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Shounen">
+              <input type="checkbox" name="Shounen" id="Shounen" class="check1">
+              <label for="Shounen">Shounen</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Shounen-Ai">
+              <input type="checkbox" name="Shounen-Ai" id="Shounen-Ai" class="check1">
+              <label for="Shounen-Ai">Shounen Ai</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Slice-of-Life">
+              <input type="checkbox" name="Slice-of-Life" id="Slice-of-Life" class="check1">
+              <label for="Slice-of-Life">Slice of Life</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Space">
+              <input type="checkbox" name="Space" id="Space" class="check1">
+              <label for="Space">Space</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Sports">
+              <input type="checkbox" name="Sports" id="Sports" class="check1">
+              <label for="Sports">Sports</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Super-Power">
+              <input type="checkbox" name="Super-Power" id="Super-Power" class="check1">
+              <label for="Super-Power">Super Power</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Supernatural">
+              <input type="checkbox" name="Supernatural" id="Supernatural" class="check1">
+              <label for="Supernatural">Supernatural</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Thriller">
+              <input type="checkbox" name="Thriller" id="Thriller" class="check1">
+              <label for="Thriller">Thriller</label>
+            </div>
+    
+            <div class="extend-genre-list" onclick="SortGenreName(event)" data-genre="Vampire">
+              <input type="checkbox" name="Vampire" id="Vampire" class="check1">
+              <label for="Vampire">Vampire</label>
+            </div>
+          </div>
+
+          <!--EXTENDED SEASON LIST-->
+
+          <div class="Extend-list extend-season">
+            <div class="extend-genre-list" onclick="SortSeasonName(event)"  data-season="Spring">
+              <input type="checkbox" name="Spring" class="check1">
+              <label for="Spring">Spring</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortSeasonName(event)"  data-season="Summer">
+              <input type="checkbox" name="Summer" class="check1">
+              <label for="Summer">Summer</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortSeasonName(event)"  data-season="Fall">
+              <input type="checkbox" name="Fall" class="check1">
+              <label for="Fall">Fall</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortSeasonName(event)"  data-season="Winter">
+              <input type="checkbox" name="Winter" class="check1">
+              <label for="Winter">Winter</label>
+            </div>
+          </div>
+
+          <!--EXTENDED YEAR LIST-->
+
+          <div class="Extend-list extend-year">
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2024">
+              <input type="checkbox" name="2024" class="check1">
+              <label for="2024">2024</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2023">
+              <input type="checkbox" name="2023" class="check1">
+              <label for="2023">2023</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2022">
+              <input type="checkbox" name="2022" class="check1">
+              <label for="2022">2022</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2021">
+              <input type="checkbox" name="2021" class="check1">
+              <label for="2021">2021</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2020">
+              <input type="checkbox" name="2020" class="check1">
+              <label for="2020">2020</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2019">
+              <input type="checkbox" name="2019" class="check1">
+              <label for="2019">2019</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2018">
+              <input type="checkbox" name="2018" class="check1">
+              <label for="2018">2018</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2017">
+              <input type="checkbox" name="2017" class="check1">
+              <label for="2017">2017</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2016">
+              <input type="checkbox" name="2016" class="check1">
+              <label for="2016">2016</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2015">
+              <input type="checkbox" name="2015" class="check1">
+              <label for="2015">2015</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2014">
+              <input type="checkbox" name="2014" class="check1">
+              <label for="2014">2014</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2013">
+              <input type="checkbox" name="2013" class="check1">
+              <label for="2013">2013</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2012">
+              <input type="checkbox" name="2012" class="check1">
+              <label for="2012">2012</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2011">
+              <input type="checkbox" name="2011" class="check1">
+              <label for="2011">2011</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2010">
+              <input type="checkbox" name="2010" class="check1">
+              <label for="2010">2010</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2009">
+              <input type="checkbox" name="2009" class="check1">
+              <label for="2009">2009</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2008">
+              <input type="checkbox" name="2008" class="check1">
+              <label for="2008">2008</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2007">
+              <input type="checkbox" name="2007" class="check1">
+              <label for="2007">2007</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2006">
+              <input type="checkbox" name="2006" class="check1">
+              <label for="2006">2006</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2005">
+              <input type="checkbox" name="2005" class="check1">
+              <label for="2005">2005</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2004">
+              <input type="checkbox" name="2004" class="check1">
+              <label for="2004">2004</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2003">
+              <input type="checkbox" name="2003" class="check1">
+              <label for="2003">2003</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2002">
+              <input type="checkbox" name="2002" class="check1">
+              <label for="2002">2002</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortYearName(event)"  data-year="2001">
+              <input type="checkbox" name="2001" class="check1">
+              <label for="2001">2001</label>
+            </div>
+          </div>
+
+          <!--EXTENDED TYPE LIST-->
+
+          <div class="Extend-list extend-type">
+            <div class="extend-genre-list" onclick="SortTypeName(event)"  data-type="Movie">
+              <input type="checkbox" name="Movie" class="check1">
+              <label for="Movie">Movie</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortTypeName(event)"  data-type="TVSeries">
+              <input type="checkbox" name="TVSeries" class="check1">
+              <label for="TVSeries">TV Series</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortTypeName(event)"  data-type="OVA">
+              <input type="checkbox" name="OVA" class="check1">
+              <label for="OVA">OVA</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortTypeName(event)"  data-type="ONA">
+              <input type="checkbox" name="ONA" class="check1">
+              <label for="ONA">ONA</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortTypeName(event)"  data-type="Special">
+              <input type="checkbox" name="Special" class="check1">
+              <label for="Special">Special</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortTypeName(event)"  data-type="Music">
+              <input type="checkbox" name="Music" class="check1">
+              <label for="Music">Music</label>
+            </div>
+          </div>
+
+          <!--EXTENDED STATUS LIST-->
+
+          <div class="Extend-list extend-status">
+            <div class="extend-genre-list" data-status="All" onclick="SortStatusName(event)">
+              <input type="radio" name="status-radio">
+              <label for="All">All</label>
+            </div>
+
+            <div class="extend-genre-list" data-status="Finished Airing" onclick="SortStatusName(event)">
+              <input type="radio" name="status-radio">
+              <label for="FinishedAiring">TV Finished Airing</label>
+            </div>
+
+            <div class="extend-genre-list" data-status="Currently Airing" onclick="SortStatusName(event)">
+              <input type="radio" name="status-radio">
+              <label for="CurrentlyAiring">Currently Airing</label>
+            </div>
+
+            <div class="extend-genre-list" data-status="Not Yet Aired" onclick="SortStatusName(event)">
+              <input type="radio" name="status-radio">
+              <label for="NotYetAired">Not Yet Aired</label>
+            </div>
+          </div>
+
+          <!--EXTENDED LANGUAGE LIST-->
+
+          <div class="Extend-list extend-language">
+            <div class="extend-genre-list" onclick="SortLanguageName(event)"  data-language="Subbed">
+              <input type="checkbox" name="subbed" class="check1">
+              <label for="subbed">Subbed</label>
+            </div>
+
+            <div class="extend-genre-list" onclick="SortLanguageName(event)"  data-language="Dubbed">
+              <input type="checkbox" name="dubbed" class="check1">
+              <label for="dubbed">Dubbed</label>
+            </div>
+          </div>
+
+          <!--EXTENDED SORT LIST-->
+
+          <div class="Extend-list extend-sort">
+            <div class="extend-genre-list" data-sort="Default" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="Default">Default</label>
+            </div>
+
+            <div class="extend-genre-list" data-sort="Recently Updated" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="RecentlyUpdated">Recently Updated</label>
+            </div>
+
+            <div class="extend-genre-list" data-sort="Recently Added" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="RecentlyAdded">Recently Added</label>
+            </div>
+
+            <div class="extend-genre-list" data-sort="Name A-Z" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="NameAZ">Name A-Z</label>
+            </div>
+
+            <div class="extend-genre-list" data-sort="Most Watched" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="MostWatched">Most Watched</label>
+            </div>
+
+            <div class="extend-genre-list" data-sort="Score" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="Score">Score</label>
+            </div>
+
+            <div class="extend-genre-list" data-sort="Released Date" onclick="SortSortName(event)">
+              <input type="radio" name="sort-radio">
+              <label for="ReleasedDate">Released Date</label>
+            </div>
+          </div>
+    
+          <!--FOOTER-->
+      
+          <footer class="footer">
+            <div class="footer-container">
+              <div class="language-toggle">
+                <input type="checkbox" class="check">
+                <span class="language" style="font-size: 12.5px; color: #9DA3A7; position: absolute; top: 17px; left: 30px;">EN/JP</span>
+                <div class="content contentEN">
+                </div>
+              </div>
+        
+              <div class="az-list">
+                <div style="display: flex;">
+                  <p style="font-size: 14px; border-right: 1px solid #4D5059; width: 77px;">A-Z LIST</p>
+                  <p style="margin-left: 20px; font-size: 13px;">Searching anime order by alphabet name A to Z.</p>
+                </div>
+                <ul style="display: flex; list-style: none; margin-top: 17.2px; margin-bottom: 20px;">
+                  <li><a href="#" style="padding: 5px 6.6px;">All</a></li>
+                  <li><a href="#" style="padding: 5px 9px">#</a></li>
+                  <li><a href="#" style="padding: 5px 5.5px;">0-9</a></li>
+                  <li><a href="#">A</a></li>
+                  <li><a href="#">B</a></li>
+                  <li><a href="#">C</a></li>
+                  <li><a href="#">D</a></li>
+                  <li><a href="#">E</a></li>
+                  <li><a href="#">F</a></li>
+                  <li><a href="#">G</a></li>
+                  <li><a href="#">H</a></li>
+                  <li><a href="#">I</a></li>
+                  <li><a href="#">J</a></li>
+                  <li><a href="#">K</a></li>
+                  <li><a href="#">L</a></li>
+                  <li><a href="#">M</a></li>
+                  <li><a href="#">N</a></li>
+                  <li><a href="#">O</a></li>
+                  <li><a href="#">P</a></li>
+                  <li><a href="#">Q</a></li>
+                  <li><a href="#">R</a></li>
+                  <li><a href="#">S</a></li>
+                  <li><a href="#">T</a></li>
+                  <li><a href="#">U</a></li>
+                  <li><a href="#">V</a></li>
+                  <li><a href="#">W</a></li>
+                  <li><a href="#">X</a></li>
+                  <li><a href="#">Y</a></li>
+                  <li><a href="#">Z</a></li>
+                </ul>
+              </div>
+        
+              <div style="display: flex;">
+                <div class="footer-copyright">
+                  <a href="#"><img src="../9anime/img/logo.png" alt="footer-logo" class="footer-logo"></a>
+                  <p style="color: #9DA3A7; font-size: 14px; margin-bottom: 17.5px;">Copyright © 9anime. All Rights Reserved</p>
+                  <ul style="list-style: none; display: flex;">
+                    <li><a href="#"><img src="../9anime/img/twitter-logo1.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="../9anime/img/animedao-footer.jpg" alt="animedao"></a></li>
+                    <li><a href="#"><img src="../9anime/img/reddit-footer.png" alt="reddit"></a></li>
+                  </ul>
+                  <p style="color: #898f8f87; font-size: 11px; line-height: 1.5; margin-top: 13px;">Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+                </div>
+        
+                <div class="footer-links">
+                  <div style="width: 180px;">
+                    <h3 style="color: white;">Help</h3>
+                    <ul style="margin-top: 12px;">
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">9anime App</a></li>
+                    </ul>
+                  </div>
+        
+                  <div>
+                    <h3 style="color: white;">Links</h3>
+                    <ul style="margin-top: 12px;">
+                      <li><a href="#">A-Z List</a></li>
+                      <li><a href="#">Upcoming</a></li>
+                      <li><a href="#">Most Popular</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <img src="../9anime/img/kurumi-footer.png" alt="footer-img" class="footer-icon">
+          </footer>
+  </body>
+
+
+        <!--JAVASCRIPT-->
+
+<script>
+  let loginform = document.querySelector(".login-container");
+  let lock = document.querySelector(".login-blur");
+  let locker = document.querySelector(".locker");
+  let over = document.querySelector("body");
+  let frgt = document.querySelector(".frgt_password_container");
+  let register = document.querySelector(".register_container");
+  let GenreFilter = document.querySelector(".extend-genre");
+  let SeasonFilter = document.querySelector(".extend-season");
+  let YearFilter = document.querySelector(".extend-year");
+  let TypeFilter = document.querySelector(".extend-type");
+  let StatusFilter = document.querySelector(".extend-status");
+  let LanguageFilter = document.querySelector(".extend-language");
+  let SortFilter = document.querySelector(".extend-sort");
+  let GenreFilterName = document.querySelector(".genre-filter-name");
+  let SeasonFilterName = document.querySelector(".season-filter-name");
+  let YearFilterName = document.querySelector(".year-filter-name");
+  let TypeFilterName = document.querySelector(".type-filter-name");
+  let StatusFilterName = document.querySelector(".status-filter-name");
+  let LanguageFilterName = document.querySelector(".language-filter-name");
+  let SortFilterName = document.querySelector(".sort-filter-name");
+  let GenreButton = document.querySelector(".list-filter");
+  let ListLocker = document.querySelector(".list-locker");
+
+  function login() {
+    if(window.getComputedStyle(loginform).visibility === "hidden"){
+      loginform.style.visibility = "visible";
+      loginform.style.opacity = 1;
+      loginform.style.top = "290px";
+      lock.style.opacity = 0.2;
+      locker.style.zIndex = 10;
+      over.style.overflow = "hidden";
+    } 
+    else {
+      loginform.style.visibility = "hidden";
+      loginform.style.opacity = 0;
+      loginform.style.top = "200px";
+      lock.style.opacity = 1;
+      locker.style.zIndex = -1;
+      over.style.overflow = "auto";
+    }
+  }
+
+  function esc() {
+    loginform.style.visibility = "hidden";
+    loginform.style.opacity = 0;
+    loginform.style.top = "200px";
+    lock.style.opacity = 1;
+    locker.style.zIndex = -1;
+    over.style.overflow = "auto";
+
+    frgt.style.visibility = "hidden";
+    frgt.style.opacity = 0;
+    frgt.style.top = "200px";
+
+    register.style.visibility = "hidden";
+    register.style.opacity = 0;
+    register.style.top = "200px";
+  }
+  
+  function frgtPass() {
+    loginform.style.visibility = "hidden";
+    loginform.style.opacity = 0;
+    loginform.style.top = "200px";
+    frgt.style.visibility = "visible";
+    frgt.style.opacity = 1;
+    frgt.style.top = "337px";
+  }
+
+  function BackToLogin() {
+    frgt.style.visibility = "hidden";
+    frgt.style.opacity = 0;
+    frgt.style.top = "200px";
+
+    loginform.style.visibility = "visible";
+    loginform.style.opacity = 1;
+    loginform.style.top = "290px";
+
+    register.style.visibility = "hidden";
+    register.style.opacity = 0;
+    register.style.top = "200px";
+  }
+
+  function registerform() {
+    loginform.style.visibility = "hidden";
+    loginform.style.opacity = 0;
+    loginform.style.top = "200px";
+
+    register.style.visibility = "visible";
+    register.style.opacity = 1;
+    register.style.top = "253px";
+  }
+
+  function ExtendFilterGenre() {
+    if(window.getComputedStyle(GenreFilter).visibility === "hidden") {
+      GenreFilter.style.visibility = "visible";
+      GenreFilter.style.opacity = 1;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      ListLocker.style.zIndex = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+    }
+    else {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function ExtendFilterSeason() {
+    if(window.getComputedStyle(SeasonFilter).visibility === "hidden") {
+      SeasonFilter.style.visibility = "visible";
+      SeasonFilter.style.opacity = 1;
+      ListLocker.style.zIndex = 0;
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+    }
+    else {
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function ExtendFilterYear() {
+    if(window.getComputedStyle(YearFilter).visibility === "hidden") {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      YearFilter.style.visibility = "visible";
+      YearFilter.style.opacity = 1;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+      ListLocker.style.zIndex = 0;
+    }
+    else {
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function ExtendFilterType() {
+    if(window.getComputedStyle(TypeFilter).visibility === "hidden") {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "visible";
+      TypeFilter.style.opacity = 1;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+      ListLocker.style.zIndex = 0;
+    }
+    else {
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function ExtendFilterStatus() {
+    if(window.getComputedStyle(StatusFilter).visibility === "hidden") {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+      StatusFilter.style.visibility = "visible";
+      StatusFilter.style.opacity = 1;
+      ListLocker.style.zIndex = 0;
+    }
+    else {
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function ExtendFilterLanguage() {
+    if(window.getComputedStyle(LanguageFilter).visibility === "hidden") {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "visible";
+      LanguageFilter.style.opacity = 1;
+      ListLocker.style.zIndex = 0;
+    }
+
+    else {
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function ExtendFilterSort() {
+    if(window.getComputedStyle(SortFilter).visibility === "hidden") {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      TypeFilter.style.visibility = "hidden";
+      TypeFilter.style.opacity = 0;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      LanguageFilter.style.visibility = "hidden";
+      LanguageFilter.style.opacity = 0;
+      SortFilter.style.visibility = "visible";
+      SortFilter.style.opacity = 1;
+      ListLocker.style.zIndex = 0;
+    }
+
+    else {
+      SortFilter.style.visibility = "hidden";
+      SortFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+    }
+  }
+
+  function backList() {
+      GenreFilter.style.visibility = "hidden";
+      GenreFilter.style.opacity = 0;
+      SeasonFilter.style.visibility = "hidden";
+      SeasonFilter.style.opacity = 0;
+      YearFilter.style.visibility = "hidden";
+      YearFilter.style.opacity = 0;
+      StatusFilter.style.visibility = "hidden";
+      StatusFilter.style.opacity = 0;
+      ListLocker.style.zIndex = -1;
+  }
+
+  /*
+  function SortGenreName(event) {
+    var parentDiv = event.currentTarget;
+    var text = parentDiv.querySelector(".genre-name");
+    var check = parentDiv.querySelector(".buffer");
+
+    if(window.getComputedStyle(text).color === "rgb(255, 255, 255)") {
+      number = number + 1;
+      selectedGendreName = text.innerHTML;
+
+      if(number > 1) {
+        GenreFilterName.innerHTML = number + " selected";
+      }
+      else {
+        GenreFilterName.innerHTML = selectedGendreName;
+      }
+    }
+    else {
+      number = number - 1;
+      if(number >= 1) {
+        GenreFilterName.innerHTML = number + " selected";
+      }
+      else{
+        GenreFilterName.innerHTML = "All";
+      }
+    }
+  }
+    */
+
+  var selectedGenres = {}; // Object to store the selected genres and their state
+  var number = 0; // To count the number of selected genres
+
+  function SortGenreName(event) {
+      var parentDiv = event.currentTarget;
+      var genre = parentDiv.getAttribute("data-genre");
+
+      // Toggle the selection state of the genre
+      if (!selectedGenres[genre]) {
+          selectedGenres[genre] = true; // Mark as selected
+          number += 1;
+          parentDiv.style.color = "white"; // Assuming white color indicates selection
+      } else {
+          selectedGenres[genre] = false; // Mark as deselected
+          number -= 1;
+          parentDiv.style.color = "#696969"; // Revert to original color
+      }
+
+      updateGenreFilterName();
+  }
+
+  function updateGenreFilterName() {
+      if (number > 1) {
+          GenreFilterName.innerHTML = number + " selected";
+      } else if (number === 1) {
+          // Find the selected genre name
+          for (var genre in selectedGenres) {
+              if (selectedGenres[genre]) {
+                  GenreFilterName.innerHTML = genre;
+                  return;
+              }
+          }
+      } else {
+          GenreFilterName.innerHTML = "All";
+      }
+  }
+
+  // Initialize selectedGenres with all genres set to false
+  document.querySelectorAll(".genre-item").forEach(function(item) {
+      var genre = item.getAttribute("data-genre");
+      selectedGenres[genre] = false;
+  });
+
+
+
+  
+
+  // EXTEND SEASON FILTER JS
+
+  var selectedSeason = {};
+  var numberS = 0;
+
+  function SortSeasonName(event) {
+      var parentDiv = event.currentTarget;
+      var season = parentDiv.getAttribute("data-season");
+
+      if (!selectedSeason[season]) {
+          selectedSeason[season] = true; 
+          numberS += 1;
+          parentDiv.style.color = "white";
+      } else {
+          selectedSeason[season] = false; 
+          numberS -= 1;
+          parentDiv.style.color = "#696969"; 
+      }
+
+      updateSeasonFilterName();
+  }
+
+  function updateSeasonFilterName() {
+      if (numberS > 1) {
+          SeasonFilterName.innerHTML = numberS + " selected";
+      } else if (numberS === 1) {
+          for (var season in selectedSeason) {
+              if (selectedSeason[season]) {
+                  SeasonFilterName.innerHTML = season;
+                  return;
+              }
+          }
+      } else {
+          SeasonFilterName.innerHTML = "All";
+      }
+  }
+
+  document.querySelectorAll(".season-item").forEach(function(item) {
+      var season = item.getAttribute("data-season");
+      selectedSeason[season] = false;
+  });
+  
+
+
+  
+
+  // EXTEND YEAR FILTER JS
+
+  var selectedYear = {};
+  var numberY = 0;
+
+  function SortYearName(event) {
+      var parentDiv = event.currentTarget;
+      var year = parentDiv.getAttribute("data-year");
+
+      if (!selectedYear[year]) {
+          selectedYear[year] = true; 
+          numberY += 1;
+          parentDiv.style.color = "white";
+      } else {
+          selectedYear[year] = false; 
+          numberY -= 1;
+          parentDiv.style.color = "#696969"; 
+      }
+
+      updateYearFilterName();
+  }
+
+  function updateYearFilterName() {
+      if (numberY > 1) {
+          YearFilterName.innerHTML = numberY + " selected";
+      } else if (numberY === 1) {
+          for (var year in selectedYear) {
+              if (selectedYear[year]) {
+                  YearFilterName.innerHTML = year;
+                  return;
+              }
+          }
+      } else {
+          YearFilterName.innerHTML = "All";
+      }
+  }
+
+  document.querySelectorAll(".year-item").forEach(function(item) {
+      var year = item.getAttribute("data-year");
+      selectedYear[year] = false;
+  });
+
+  // EXTEND TYPE FILTER JS
+
+  var selectedType = {};
+  var numberT = 0;
+
+  function SortTypeName(event) {
+      var parentDiv = event.currentTarget;
+      var type = parentDiv.getAttribute("data-type");
+
+      if (!selectedType[type]) {
+          selectedType[type] = true; 
+          numberT += 1;
+          parentDiv.style.color = "white";
+      } else {
+          selectedType[type] = false; 
+          numberT -= 1;
+          parentDiv.style.color = "#696969"; 
+      }
+
+      updateTypeFilterName();
+  }
+
+  function updateTypeFilterName() {
+      if (numberT > 1) {
+          TypeFilterName.innerHTML = numberT + " selected";
+      } else if (numberT === 1) {
+          for (var type in selectedType) {
+              if (selectedType[type]) {
+                  TypeFilterName.innerHTML = type;
+                  return;
+              }
+          }
+      } else {
+          TypeFilterName.innerHTML = "All";
+      }
+  }
+
+  document.querySelectorAll(".type-item").forEach(function(item) {
+      var type = item.getAttribute("data-type");
+      selectedType[type] = false;
+  });
+
+  // EXTEND STATUS FILTER JS
+
+  function SortStatusName(event) {
+      var parentDiv = event.currentTarget;
+      var status = parentDiv.getAttribute("data-status");
+
+      StatusFilterName.innerHTML = status;
+  }
+
+  // EXTEND LANGUAGE FILTER JS
+
+  var selectedlanguage = {};
+  var numberL = 0;
+
+  function SortLanguageName(event) {
+      var parentDiv = event.currentTarget;
+      var language = parentDiv.getAttribute("data-language");
+
+      if (!selectedlanguage[language]) {
+          selectedlanguage[language] = true; 
+          numberL += 1;
+          parentDiv.style.color = "white";
+      } else {
+          selectedlanguage[language] = false; 
+          numberL -= 1;
+          parentDiv.style.color = "#696969"; 
+      }
+
+      updateLanguageFilterName();
+  }
+
+  function updateLanguageFilterName() {
+      if (numberL > 1) {
+          LanguageFilterName.innerHTML = numberL + " selected";
+      } else if (numberL === 1) {
+          for (var language in selectedlanguage) {
+              if (selectedlanguage[language]) {
+                  LanguageFilterName.innerHTML = language;
+                  return;
+              }
+          }
+      } else {
+          LanguageFilterName.innerHTML = "All";
+      }
+  }
+
+  document.querySelectorAll(".language-item").forEach(function(item) {
+      var language = item.getAttribute("data-language");
+      selectedlanguage[language] = false;
+  });
+
+  // EXTEND SORT FILTER JS
+
+  function SortSortName(event) {
+      var parentDiv = event.currentTarget;
+      var sort = parentDiv.getAttribute("data-sort");
+
+      SortFilterName.innerHTML = sort;
+  }
+
+</script>
+</html>
