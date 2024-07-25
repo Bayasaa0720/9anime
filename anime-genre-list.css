@@ -681,14 +681,18 @@
   z-index: 1;
 }
 
-.search-list-footer p {
+.page-number {
+  display: flex;
+}
+
+.page-number p {
   color: #696969;
   font-size: 13px;
   line-height: 2.2;
   margin-right: 5px;
 }
 
-.search-list-footer form input {
+.page-number form input {
   width: 24px;
   height: 26px;
   padding: 2px 0 0 13px;
@@ -905,4 +909,161 @@
 
 .footer {
   top: 1645px;
+}
+
+@media screen and (max-width: 439px) {
+
+  .main-list-container {
+    display: block;
+  }
+
+  .headling {
+    margin-left: 10px;
+  }
+
+  .list-wrapper {
+    width: 439px;
+  }
+
+  .side-list {
+    position: absolute;
+    top: 6140px;
+    margin-left: 0;
+    width: 370px;
+  }
+
+  .footer {
+    top: 6800px;
+  }
+
+  .anime-list-header-search form input {
+    display: none;
+  }
+
+  .anime-list-header-container {
+    width: 150px;
+  }
+
+  .anime-list-header-search {
+    width: 50px;
+  }
+
+  .anime-list-header-search img {
+    right: 5px;
+  }
+
+  .anime-list-header-sm {
+    display: none;
+  }
+
+  .search-list {
+    width: 370px;
+    height: 265px;
+    margin-left: 10px;
+  }
+
+  .search-filter {
+    width: 360px;
+    height: 170px;
+    column-count: 2;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .list-filter {
+    margin-right: 8px;
+  }
+
+  .search-list form input {
+    width: 307px;
+  }
+
+  .search-list form button {
+    width: 350px;
+  }
+
+  .anime-list-container {
+    margin-top: 100px;
+  }
+
+  .anime-small {
+    width: 179.5px;
+  }
+
+  .anime-small:nth-child(2),
+  .anime-small:nth-child(4),
+  .anime-small:nth-child(6),
+  .anime-small:nth-child(8),
+  .anime-small:nth-child(12),
+  .anime-small:nth-child(14),
+  .anime-small:nth-child(16),
+  .anime-small:nth-child(18),
+  .anime-small:nth-child(22),
+  .anime-small:nth-child(24),
+  .anime-small:nth-child(26),
+  .anime-small:nth-child(28),
+  .anime-small:nth-child(32) {
+    margin-right: 0;
+  }
+
+  .anime-small:nth-child(5),
+  .anime-small:nth-child(15),
+  .anime-small:nth-child(25) {
+    margin-right: 11px;
+  }
+
+  .side-list {
+    margin-left: 10px;
+  }
+
+  .search-list-footer {
+    position: relative;
+  }
+
+  .previous {
+    width: 190px;
+  }
+
+  .previous a {
+    padding: 8px 53px 9px 70px
+  }
+
+  .previous img {
+    left: 57px;
+  }
+
+  .next {
+    width: 170px;
+  }
+
+  .next a {
+    padding: 8px 78px 9px 73px;
+  }
+
+  .next img {
+    right: 50px;
+  }
+
+  .page-number {
+    position: absolute;
+    top: 45px;
+  }
+
+  .page-number form input {
+    width: 24px;
+  }
+
+  .list-locker {
+    width: 439px;
+  }
+
+  .Extend-list {
+    left: 20px;
+    top: 175px;
+  }
+
+  .extend-genre {
+    width: 250px;
+  }
 }

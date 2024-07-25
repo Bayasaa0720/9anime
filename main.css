@@ -209,6 +209,8 @@ a {
   transition: all ease-in-out 200ms;
 }
 
+/*LOGIN FORM CSS*/
+
 .login-container {
   background-image: url(../9anime/img/login-background.avif);
   background-position: center;
@@ -334,6 +336,16 @@ a {
   border: 0;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.mobile-account {
+  height: 50px;
+  display: none;
+}
+
+.mobile-account img {
+  margin-top: 8px;
+  height: 70%;
 }
 
 .register {
@@ -650,6 +662,10 @@ input {
   position: relative;
 }
 
+.footer-flex {
+  display: flex;
+}
+
 .footer-container {
   position: relative;
   width: 1120px;
@@ -659,6 +675,14 @@ input {
 
 .language-toggle {
   margin-bottom: 23.5px;
+}
+
+.language {
+  font-size: 12.5px;
+  color: #9DA3A7;
+  position: absolute;
+  top: 17px;
+  left: 30px;
 }
 
 .content {
@@ -748,6 +772,13 @@ input {
   margin-right: 10px;
 }
 
+.disclaimer {
+  color: #898f8f87;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 13px;
+}
+
 .footer-links {
   width: 400px;
   height: 190px;
@@ -773,7 +804,7 @@ input {
   z-index: 0;
 }
 
-@media (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .main-header {
     width: 1350px;
     margin: 0 auto;
@@ -792,4 +823,145 @@ input {
   }
 
 }
+
+@media screen and (max-width: 439px) {
+
+  .wrapper-main {
+    width: 430px;
+    margin: 0 auto;
+  }
+
+  .main-header {
+    padding: 18px 5px;
+    width: 394px;
+  }
+  .header-logo {
+    width: 250px;
+  }
+
+  .sign-in {
+    display: none;
+  }
+
+  .header-logo img {
+    height: 40px;
+  }
+
+  .mobile-account {
+    display: block;
+  }
+
+  .footer {
+    width: 394px;
+  }
+
+  .footer-flex {
+    display: block;
+  }
+
+  .footer-container {
+    width: 394px;
+    height: 380px;
+    margin-left: 0;
+  }
+
+  .language-toggle {
+    margin-left: 10px;
+  }
+
+  .language {
+    left: 40px;
+    top: 15px;
+  }
+
+  .footer-copyright {
+    width: 394px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0;
+  }
+
+  .footer-logo {
+    margin-top: 0;
+  }
+
+  .disclaimer {
+    text-align: center;
+  }
+
+  .check {
+    margin-top: 13px;
+  }
+
+  .footer-icon {
+    display: none;
+  }
+
+  .az-list {
+    display: none;
+  }
+
+  .footer-links {
+    margin-left: 10px;
+    height: 120px;
+  }
+
+  .login-container {
+    width: 335px;
+    top: 340px;
+    margin: 0 30px;
+  }
+
+  .login-form {
+    padding-left: 10px;
+  }
+
+  .frgt_password_container {
+    width: 335px;
+    top: 400px;
+    margin: 0 30px;
+  }
+
+  .frgt_password_form {
+    margin-left: 10px;
+  }
+
+  .frgt_password_kurumi {
+    display: none;
+  }
+
+  .register_container {
+    width: 335px;
+    top: 320px;
+    margin: 0 30px;
+  }
+
+  .register_kurumi {
+    display: none;
+  }
+
+  .register_form {
+    margin-left: 10px;
+  }
+
+  .blur {
+    width: 335px;
+  }
+
+  .blur1 {
+    width: 335px;
+  }
+
+  .blur2 {
+    width: 335px;
+  }
+
+  .login-kurumi {
+    display: none;
+  }
+}
+
 
