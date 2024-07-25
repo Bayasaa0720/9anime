@@ -32,6 +32,8 @@ a {
   flex-wrap: wrap;
   padding: 20px 86px;
   justify-content: space-between;
+  width: 1350px;
+  margin: 0 auto;
 }
 
 .burger-menu {
@@ -671,6 +673,7 @@ input {
   width: 1120px;
   height: 330px;
   margin-left: 91px;
+  margin-left: 15%;
 }
 
 .language-toggle {
@@ -802,26 +805,11 @@ input {
   top: -65px;
   right: -160px;
   z-index: 0;
+  margin-right: 13.5%;
 }
 
-@media only screen and (max-width: 1440px) {
-  .main-header {
-    width: 1350px;
-    margin: 0 auto;
-  }
-  
-  .footer-container {
-    margin-left: 15%;
-  }
-
-  .footer-icon {
-    margin-right: 13.5%;
-  }
-
-  .footer-home-button {
-    margin: 55px 830px;
-  }
-
+.footer-home-button {
+  margin: 55px 830px;
 }
 
 @media screen and (max-width: 439px) {
@@ -963,5 +951,6 @@ input {
     display: none;
   }
 }
+
 
 
