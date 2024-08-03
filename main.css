@@ -77,7 +77,7 @@ a {
   padding-right: 35px;
 }
 
-.burger-menu-btn ul li.genres ul {
+.genres-list {
   list-style: none;
   position: absolute;
   opacity: 0;
@@ -844,7 +844,7 @@ input {
   }
 
   .pls li a {
-    /*padding-right: 275px;*/
+    padding-right: 275px;
   }
 
   .burger-menu-btn ul li.genres ul {
@@ -854,15 +854,11 @@ input {
   .burger-menu-btn ul li.genres ul li {
     width: 115px;
   }
-
+/*
   .burger-menu-btn ul li.genres:hover > ul {
     left: 0;
     top: 78px;
-  }
-
-  .burger-menu-btn ul li:nth-child(3) {
-    margin-top: 450px;
-  }
+  }*/
 
   .footer {
     width: 394px;

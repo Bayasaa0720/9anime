@@ -18,8 +18,8 @@
           <img src="../9anime/img/burger-menu.png" alt="burger menu" class="burger-menu">
         <ul style="margin-top: 20px;" class="pls">
           <li style="padding-top: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;"><a href="index.html">HOME</a></li>
-          <li class="genres"><a href="#">GENRES</a>
-            <ul>
+          <li class="genres" onclick="mobileburger(event)"><a href="#">GENRES</a>
+            <ul class="genres-list">
               <li style="margin-top: 10px;"><a href="action.html">Action</a></li>
               <li style="margin-top: 10px;"><a href="#">Adveture</a></li>
               <li style="margin-top: 10px;"><a href="#">Cars</a></li>
@@ -63,7 +63,7 @@
               <li><a href="#">Vampire</a></li>
             </ul>
           </li>
-          <li class="types"><a href="#">TYPES</a>
+          <li class="types"><a href="#" class="types-a">TYPES</a>
             <ul>
               <li><a href="#" style="margin-top: 10px;">Movies</a></li>
               <li><a href="">TV Series</a></li>
@@ -512,6 +512,27 @@
     register.style.opacity = 1;
     register.style.top = "253px";
   }
+
+  function mobileburger() {
+
+    const types = document.querySelector(".types");
+    const genres = document.querySelector(".genres-list");
+
+    if(window.getComputedStyle(types).marginTop === "0px") {
+      types.style.marginTop = "450px";
+      genres.style.left = 0;
+      genres.style.top = "78px";
+      genres.style.zIndex = 10;
+      genres.style.opacity = 1;
+    }
+    else if(window.getComputedStyle(types).marginTop === "450px"){
+      types.style.marginTop = 0;
+      genres.style.zIndex = -1;
+      genres.style.opacity = 0;
+    }
+  }
+
+  window.addEventListener('resize', mobileburger);
 
 </script>
 </html>
