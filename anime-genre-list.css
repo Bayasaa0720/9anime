@@ -1066,4 +1066,9 @@
   .extend-genre {
     width: 250px;
   }
+  
+  .anime-small:hover > .anime-small-popup {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

@@ -839,6 +839,31 @@ input {
     display: block;
   }
 
+  .pls {
+    left: 9px;
+  }
+
+  .pls li a {
+    /*padding-right: 275px;*/
+  }
+
+  .burger-menu-btn ul li.genres ul {
+    width: 372px;
+  }
+
+  .burger-menu-btn ul li.genres ul li {
+    width: 115px;
+  }
+
+  .burger-menu-btn ul li.genres:hover > ul {
+    left: 0;
+    top: 78px;
+  }
+
+  .burger-menu-btn ul li:nth-child(3) {
+    margin-top: 450px;
+  }
+
   .footer {
     width: 394px;
   }
