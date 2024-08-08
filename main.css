@@ -868,6 +868,12 @@ input {
     margin-top: 0;
   }
 
+  .burger-menu-btn ul li.types ul {
+    padding-bottom: 10px;
+    width: 379.5px;
+    border-radius: 0;
+  }
+
 /*
   .burger-menu-btn ul li.genres:hover > ul {
     left: 0;

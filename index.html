@@ -63,8 +63,8 @@
               <li><a href="#">Vampire</a></li>
             </ul>
           </li>
-          <li class="types"><a href="#" class="types-a">TYPES</a>
-            <ul>
+          <li class="types" onclick="mobileburgertypes()"><a href="#" class="types-a">TYPES</a>
+            <ul class="types-list">
               <li><a href="#" style="margin-top: 10px;">Movies</a></li>
               <li><a href="">TV Series</a></li>
               <li><a href="">OVAs</a></li>
@@ -72,7 +72,7 @@
               <li><a href="">Specials</a></li>
             </ul>
           </li>
-          <li><a href="#">UPDATED</a></li>
+          <li class="updated"><a href="#">UPDATED</a></li>
           <li><a href="#">ADDED</a></li>
           <li><a href="#">ONGOING</a></li>
           <li><a href="#">UPCOMING</a></li>
@@ -513,10 +513,15 @@
     register.style.top = "253px";
   }
 
+  
+  const types = document.querySelector(".types");
+  const genres = document.querySelector(".genres-list");
+  const updated = document.querySelector(".updated");
+  const typeslist = document.querySelector(".types-list");
+  const pls = document.querySelector(".pls");
+
   function mobileburger() {
 
-    const types = document.querySelector(".types");
-    const genres = document.querySelector(".genres-list");
 
     if(window.getComputedStyle(types).marginTop === "0px") {
       types.style.marginTop = "450px";
@@ -524,15 +529,39 @@
       genres.style.top = "78px";
       genres.style.zIndex = 10;
       genres.style.opacity = 1;
+      updated.style.marginTop = 0;
+      typeslist.style.zIndex = -1;
+      typeslist.style.opacity = 0;
     }
-    else if(window.getComputedStyle(types).marginTop === "450px"){
+    else if(window.getComputedStyle(types).marginTop === "450px") {
       types.style.marginTop = 0;
       genres.style.zIndex = -1;
       genres.style.opacity = 0;
     }
+    else if(window.getComputedStyle(pls).visibility === "hidden") {
+
+    }
   }
 
-  window.addEventListener('resize', mobileburger);
+  function mobileburgertypes() {
+
+
+    if(window.getComputedStyle(updated).marginTop === "0px") {
+      updated.style.marginTop = "160px";
+      typeslist.style.left = 0;
+      typeslist.style.top = "108px";
+      typeslist.style.zIndex = 10;
+      typeslist.style.opacity = 1;
+      types.style.marginTop = 0;
+      genres.style.zIndex = -1;
+      genres.style.opacity = 0;
+    }
+    else if(window.getComputedStyle(updated).marginTop === "160px") {
+      updated.style.marginTop = 0;
+      typeslist.style.zIndex = -1;
+      typeslist.style.opacity = 0;
+    }
+  }
 
 </script>
 </html>
