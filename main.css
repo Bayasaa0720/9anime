@@ -817,7 +817,7 @@ input {
   margin: 55px 830px;
 }
 
-@media screen and (max-width: 439px) {
+@media screen and (max-width: 720px) {
 
   .wrapper-main {
     width: 430px;

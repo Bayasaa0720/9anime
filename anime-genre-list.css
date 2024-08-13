@@ -911,7 +911,7 @@
   top: 1645px;
 }
 
-@media screen and (max-width: 439px) {
+@media screen and (max-width: 720px) {
 
   .main-list-container {
     display: block;
